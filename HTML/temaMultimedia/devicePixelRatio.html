@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Device Pixel Ratio(DPR)</title>
+</head>
+<body>
+    <h1>Multimedia</h1>
+    <!-- DAR CONDICIONES A TRAVES DE UNA IMAGEN -->
+    <!-- Podemos agregar un src="" adicional al srcset por si el navegador es muy antiguo, al menos pueda carga esa imagen -->
+    <img srcset="/assets/images/PERRO.png, 
+                 /assets/images/PERRO2.png 1x" src="/assets/images/perro.gif" alt="Imagen perro">  <!-- si tiene un dpr de 3, cargara esta imagen -->
+   
+    
+</body>
+</html>
+
+<!-- 
+    DPR -> Es la relacion que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para pintar contenido
+    
+    DPR(pixeles reales/pixeles disponibles)
+
+    width -> Establece el ancho de las imagenes
+
+    srcset -> Set de links de donde puede cargar las imagenes en funcion  de una condicion, se recomiendo acompanarlo con un src por si algun navegador no lo acepta
+-->

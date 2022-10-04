@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Article en Section</title>
+</head>
+
+<body>
+    <header>
+        <h1>NOTICIAS</h1>
+    </header>
+
+    <main>
+        <!-- Este <section> agrupa noticias -->
+        <section>
+            <h2>Section como contenedor</h2>
+        <!-- Este <section> agrupa las noticias del dia -->
+            <section>
+            <h3>Noticias del dia</h3>
+            <!-- Los article son independientes, pueden contener header y footer -->
+            <!-- Noticia 1 -->
+            <article>
+                <header>
+                    <h4>Noticia 1</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, in.</p>
+                <footer>La noticia 1 fue en Mexico</footer>
+            </article>
+            <!-- Noticia 2 -->
+            <article>
+                <header>
+                    <h4>Noticia 2</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, in.</p>
+                <footer>La noticia 2 fue en China</footer>
+            </article>
+            <!-- Noticia 3 -->
+            <article>
+                <header>
+                    <h4>Noticia 3</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, in.</p>
+                <footer>La noticia 3 fue en Estados Unidos</footer>
+            </article>
+        </section>
+    </section>
+    </main>
+
+    <footer>09-21-2022</footer>
+</body>
+</html>
+
+<!-- 
+    SECTION: Agrupa contenido relacionado. Lo usamos cuando creamos bloques cuyo contenido es parte de un bloque total(noticias)
+
+    ANIDAMIENTO: Un section puede contener articles dentro de si para representar temas que estan relacionados entre si
+
+    PARA VALIDAR UN CODIGO HTML USA: https://validator.w3.org/nu/#textarea
+ -->

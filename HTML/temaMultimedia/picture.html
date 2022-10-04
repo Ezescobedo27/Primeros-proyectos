@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture</title>
+</head>
+<body>
+    <picture>
+        <source srcset="
+        /assets/images/PERRO.png,
+        /assets/images/PERRO2.png" media="(min-width:1200px)">
+
+        <img src="/assets/images/PERRO2.png" alt="Imagen perro">
+    </picture>
+</body>
+</html>
+
+<!-- 
+    Lo podemos utilizar para crear diseños responsivos(adaptables para telefono)
+    picture -> funciona igual que srcset pero nos da mas opciones
+
+    Estructura:
+    <picture> -> Encierra el contenido
+
+    source -> se usa para almacenar las imagenes y contienen las etiquetas <srcset> y <media>
+    srcset: se usa para que la primera imagen aparezca hasta que se cumpla la condicion planteada, cuando deja de cumplirse se comienza a cumplir la siguiente condicion
+    media: Se usa para determinar el tamaño minino o maximo que se necesita para que la condicion se siga cumpliendo
+
+    Si no ponemos un img(imagen de respaldo por si no cargan dichas imagenes) no funcionarra
+ -->

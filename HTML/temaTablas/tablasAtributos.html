@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+
+</head>
+<body>
+    <style>
+         col:nth-child(1){
+            background-color: steelblue;
+        }
+
+        col:nth-child(2){
+            background-color: lightcoral;
+        }
+    </style>
+
+    <h1>Tabla</h1>
+
+    <table>
+        <caption>Horario de clases</caption>
+
+        <!-- Se usa para seleccioar columnas -->
+        <colgroup>
+            <col span="5"> <!-- 1 columna -->
+            <col> <!-- 2 columna -->
+            
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+    </thead>
+
+        <tbody>
+            <tr>
+                <td>08:30 - 09:30</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+            </tr>
+
+            <tr>
+                <td>09:30 - 10:25</td>
+                <td>Lenguas</td>
+                <td>Lenguas</td>
+                <td>Matematicas</td>
+                <td>Ciencias</td>
+                <td>Lenguas</td>
+            </tr>
+            
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+            </tr>
+
+            <tr>
+                <td>11:20 - 11:45</td>
+                <!-- Ocupa 5 columnas(__) -->
+                <td colspan="5">Recreo</td>
+            </tr>
+            
+            <tr>
+                <td>11:45 - 12:40</td>
+                <!-- Ocupa 2 filas(|) y por lo tanto tendremos que borrar la celda de abajo -->
+                <td rowspan="2">Tecnologia</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Ingles</td>
+                <td rowspan="2">Tecnologia</td>
+            </tr>
+            
+            <tr>
+                <td>12:40 - 13:35</td>
+                
+                <td>Quimica</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+            </tr>
+           
+            <tr>
+                <td>13:35 - 14:30</td>
+                <td>Fisica</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Geografia   </td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
+
+<!-- 
+    Para hacer que las celdas ocupen mas de una fila o columna, existen 2 atributos 
+
+    rowspan -> Sirve para que una celda ocupe mas de una fila el valor por defecto es 1
+
+    colspan -> Sirve para que una celda ocupe mas de una columna, el valor por defecto es 1 y cuando estas dentro del col solo usas span
+
+    Cuando necesitamos seleccionar una columna, usamos la etiqueta colgroup que nos permite selecciona una columna en concreto. Dentro vamos a poner tantas etiquetas col como columnas tengamoos, cada etiqueta col equivale a una columna siguiendo el orden de la tabla.
+
+    Si necesitamos que una etiqueta col agrupe mas de una columna tenemos el atributo span que funciona igual que rowspan y colspan
+ -->

@@ -1,0 +1,33 @@
+<!-- No te presiones con este tema, te servira mas adelante por el momento solo es necesario entender lo que es -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>getVSpost</title>
+</head>
+<body>
+    <form action="enviar.html" method="post">
+        <!-- Para que la informacion se envie, tienes que usar el atributo name en los formularios-->
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+        <label for="surname">Apellido</label>
+        <input type="text" id="surname" name="surname">
+        <input type="submit">
+    </form>
+    
+    <form action="enviar.html" method="get">
+        <!-- Para que la informacion se envie, tienes que usar el atributo name en los formularios-->
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+        <label for="surname">Apellido</label>
+        <input type="text" id="surname" name="surname">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
+
+<!--
+    GET: Metodo que se ejecuta cuando nosotros entramos a una pagina a traves de la url
+    POST: Envio de formularios a traves del backend(parte trasera de la pagina)
+  -->

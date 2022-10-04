@@ -1,0 +1,125 @@
+<!-- A las tablas nunca se les debe agregar estilo en HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+</head>
+<body>
+
+    <h1>Tabla</h1>
+<!-- INICIO DE LA TABLA -->
+    <table>
+        <!-- Agregamos un titulo a la tabla -->
+        <caption>Horario de clases</caption>
+        <!-- Agrega un encabeza a cada fila de la tabla -->
+        <thead>
+            <!-- <tr> para crear un fila comun y corriente -->
+            <tr>
+                <!-- Sustituimos el <td> por el <th> debido a que es un thead -->
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+    </thead>
+        <!-- <tbody> Se usa para separar contenido de la tabla cuando usamos un thead -->
+        <tbody>
+            <!-- Creamos una fila (1)-->
+            <tr>
+                <!-- Creamos celdas por cada fila(6) -->
+                <td>08:30 - 09:30</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+            </tr>
+
+            <tr>
+                <td>09:30 - 10:25</td>
+                <td>Lenguas</td>
+                <td>Lenguas</td>
+                <td>Matematicas</td>
+                <td>Ciencias</td>
+                <td>Lenguas</td>
+            </tr>
+            
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+            </tr>
+
+            <tr>
+                <td>11:20 - 11:45</td>
+                <td>Recreo</td>
+            </tr>
+            
+            <tr>
+                <td>11:45 - 12:40</td>
+                <td>Ingles</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Ingles</td>
+                <td>Matematicas</td>
+            </tr>
+            
+            <tr>
+                <td>12:40 - 13:35</td>
+                <td>Matematicas</td>
+                <td>Quimica</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+            </tr>
+           
+            <tr>
+                <td>13:35 - 14:30</td>
+                <td>Fisica</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Geografia   </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
+
+<!-- 
+    Las tablas muestran contenido tabulado
+
+    La estructura basica de una tabla se compone en:
+    
+    <table> -> Encierra la tabla
+
+    <tr> -> Construye la fila de la tabla (fila = hacia abajo)
+
+    <td> -> Construye una celda en la tabla (celda = hacia al lado)
+
+    <caption> -> Se coloca despues de la etiqueta table y se usa para poner un titulo
+
+    <thead> -> Sirven para colocar cabeceras dentro de las tablas(Dentro esta la etiqueta tr normal pero en el caso de las celdas, las estableceremos con la etiqueta th en lugar de td)
+
+    <tbody> -> no es necesario pero ayuda a separa el contenido principal de la tabla cuando agregas un <thead>
+
+    <tfoot> -> Sirve para agregar pies de pagina(es totalmente opcional)
+
+    El numero de celdas dentro de un td establecera el numero de columnas de la tabla
+
+    ]
+ -->

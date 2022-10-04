@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos de formulario</title>
+</head>
+<body>
+    <form>
+        <!-- fieldset para agrupar elementos -->
+        <fieldset>
+            <!-- legend para titulos en fieldse -->
+            <legend>Datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname">
+        </fieldset>
+
+        <input type="file"><br><br>
+
+        <label for="fuel">Combustible</label>
+        <meter id="fuel" min="0" max="100" low="30" high="70" value="50" optimum="50"> 
+
+        </meter><br><br>
+
+        <label for="task">Tarea 1</label>
+        <progress id="task"  max="100" value="10"></progress><br><br>
+
+        <label for="mensaje">Mensaje</label>
+
+        <textarea name="" id="mensaje" cols="10" rows="2" ></textarea>
+    </form>
+</body>
+</html>
+
+
+
+
+<!--
+fieldset -> Se utiliza para agrupar elementos dentro de un formulario(encierra el formulario entre linea
+
+legend -> Representa una etiqueta para el contenido fieldset(Titulos, nombres, etc)
+
+file -> Este input se utiliza para cargar archivos y enviarlos desde un formulario
+
+meter -> Representa el valor dentro de un rango conocido
+max: Representa el valor maximo de la barra de progreso
+min: Representa el valor minimo de la barra de progreso
+low: Representa que desde ese rango para abajo, es bajo
+high: Representa que desde ese rango para arriba, es alto
+optimum: Representa el valor optimo
+
+progress -> Representa el progreso de una barra(Es como la baterial del telefono)
+
+
+textarea -> Se utiliza para introducir un texto en un formulario
+-->

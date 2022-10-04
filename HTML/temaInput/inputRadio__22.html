@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Input radio</title>
+</head>
+<body>
+    <!-- Input radio -->
+    <h2>Input radio</h2>
+    <form>
+        <label for="">Masculino
+            <!-- Al relacionar los radio con el name, declaramos que solo sera posible escoger 1 opcion de radio pues estan conectados -->
+            <input type="radio" name="genero" value="masculino">
+        </label>
+        <label for="">Femenino
+            <!-- El value nos sirve para decirle al formulario cuando lo enviemos que valor es el que contiene el elemento, debe ser identificativo -->
+            <input type="radio" name="genero" value="femenino">
+        </label>
+        <label for="">Desconocido
+            <input type="radio" name="genero" value="desconocido">
+        </label>
+    </form>
+
+    
+
+    <!-- Input checkbox -->
+    <h2>Input checkbox</h2>
+    <form>
+        <label>
+            <input type="checkbox" name="languages" value="html" checked>HTML
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="css">C++
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="js">JS
+        </label>
+    </form>
+
+    <!--  Select -->
+    <h2> Select</h2>
+    <form>
+        <!-- Escribimos la etiqueta select y le designamos un nombre -->
+        <select name="lenguajesProgramacion">
+            <!-- optgroup sirve para ordenar por categorias y usamos el label para designarle el nombre de la categoria-->
+            <optgroup label="Frontend">
+                <!-- Al option le agregamos el value que nos ayudara mas adelante en el momento de recibir lo datos -->
+                <option value="c++">C++</option>
+                <option value="go">Go</option>
+            </optgroup>
+
+            <optgroup label="Backend">
+                <option value="c">C</option>
+                <option value="c#">C#</option>
+                <option value="ruby">Ruby</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="js">JS</option>
+            </optgroup>
+        </select>
+    </form>
+    
+    <!-- Input list -->
+    <h2>Input list</h2>
+    <form>
+        <input type="list" list="mascotas">
+        <datalist id="mascotas">
+            <option value="perro"></option>
+            <option value="gato"></option>
+            <option value="cocodrilo"></option>
+            <option value="perico"></option>
+            <option value="mapache"></option>
+            <option value="cabra"></option>
+        </datalist>
+    </form>
+    <!--
+        INPUT RADIO:
+    radio -> Permite seleccionar una unica opcion de una lista de opciones relaciionadas.
+
+    checkbox -> Permite seleccionar varias opciones de una lista de opciones relacionadas
+
+    checked -> Sirve para que salga marcado por defecto
+
+    select -> Crea una lisa de opciones donde podemos seleccionar una o varias opciones
+    
+    Cada opcion ira dentro de una etiqueta <option> </option>
+
+    Si tenemos muchaso pciones podemos ordenarlas por categorias a traves de la etiqueta <optgroup> con el atributo label para nombrar la categoria
+
+    La etiqueta multiple nos permitira elegiir varias opciones
+
+    el input list con el atributo datalist es parecido al select pero este funciona de una manera mas ordenada con los elementos(dando sugerencias dependiedo de lo que escribas)
+    -->
+    
+</body>
+</html>

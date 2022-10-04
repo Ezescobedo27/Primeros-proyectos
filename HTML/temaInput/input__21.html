@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos de los formularios</title>
+</head>
+<body>
+    
+    <form action="">
+        
+        <label for="">Tipos de input</label><br>
+        <!-- Fechas -->
+        <h2>Fechas</h2>
+        <input type="date"><br>
+        <input type="time"><br>
+        <input type="datetime-local"><br>
+        <input type="month"><br>
+        <input type="week"><br>
+
+
+        <!-- Para moviles(se ven todos iguales en pc pero en movil se ven diferente) -->
+        <h2>Para moviles</h2>
+        <!-- Uso los label para que aparezca el nombre de lo que es al lado del input con dicho atributo -->
+        <label for="">search</label>
+        <input type="search"><br>
+
+        <label for="">email</label>
+        <input type="email"><br>
+
+        <label for="">tel</label>
+        <input type="tel"><br>
+
+        <label for="">password</label>
+        <input type="password"><br>
+
+        <label for="">url</label>
+        <input type="url"><br>
+
+        <!-- Entre otros atributos-->
+        <h2>Entre otros</h2>
+        <input type="color"><br>
+        <input type="hidden"><br>
+        <input type="range" step="1" min="1" max="10"><br>
+        <input type="reset"><br>
+        <input type="text"><br>
+        <input type="number"><br>
+        <input type="submit" value="enviar"><br>
+        <input type="button" value="boton"><br>
+
+        <button>Enviar</button>
+    </form>
+    
+
+</body>
+</html>
+
+<!-- 
+    TIPOS DE <input>(usos):
+
+    INPUT FECHA:
+    "date" -> Se introduce una fecha
+    "datetime-local" -> Se introduce fehca y hora
+    "time" -> Se introduce una hora
+    "week" -> Se introduce el numero de semana del año
+    "month" -> Se introduce un mes
+
+    PARA MOVILES:
+    "tel" -> Se utiliza para numeros de telefono
+    "search" -> Se utiliza para las barras de busqueda
+    "email" -> Se introduce el email(correo electronico)
+    "url" -> Se introducen links(enlaces)
+    "password" -> Se utiliza para contraseñas
+
+
+    ENTRE OTRO:
+
+    value="" -> Establecer el valor de ciertos input
+    "reset" -> Se utiliza para resetear el formulario
+    "button" -> Se comporta igual que un <button>
+    "color" -> Especifica un color
+    "submit" -> Envia un formulario
+    "number" -> Se utiliza pasa introducir numeros
+    "hidden" -> Contendra un valor pero no se mostrara(oculto)
+    "text" -> Es el valor por defecto y se introduce texto
+    "range" -> Establece un rango en el formulario(1-10)
+        step: Establece de cuanto en cuanto va el range.
+        min: Establece desde cuanto empieza el range.
+        max: Establece hasta cuanto termina el range.
+    
+ -->
